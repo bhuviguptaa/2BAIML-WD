@@ -2,20 +2,17 @@
     <head>
         <script>
             function sum(){
-                let a = 10;
-                let b = 20;
-                let c = a+b;
-                document.write(c); 
+                let age= parseInt(prompt("enter value of a"));
+                if(age>=18){
+                    alert("you are elgible")
+                }
+                else{
+                    alert("you are not elgible")
+                }
             }
         </script>
-        </head>
+    </head>
         <body>
-            <p>Hello !</p>
-            <script>
-                let a = 10;
-                let b = 20;
-                let c = a+b;
-                console.log(c);
-            </script>
-            <input type="button" onclick="sum()" value="Result">
+            <input type="button" value="result" onclick="sum()">
         </body>
+        </html>
