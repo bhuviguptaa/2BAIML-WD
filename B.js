@@ -30,3 +30,12 @@ let totalMarks = total(80, 90, 85);
 console.log(totalMarks);
 let percentage = add(totalMarks);
 console.log(percentage);
+let student = [
+    ['Alice', 85],
+    ['Bob', 90],
+    ['Charlie', 88]
+]
+for(let i = 0; i < student.length; i++){
+    for(let j = 0; j < student[i].length; j++){
+    console.log(student[i][j]);
+}}
