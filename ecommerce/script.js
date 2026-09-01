@@ -9,6 +9,7 @@ let product = {
     },
     updateQuantity: function(newQuantity) {
         product.quantity = newQuantity;
+        product.displayDetails();
     },
     displayDetails: function() {
         document.getElementById("output").innerHTML =
@@ -20,5 +21,6 @@ let product = {
     }
 };
 product.displayDetails();
+product.updateQuantity(3);
 
 
