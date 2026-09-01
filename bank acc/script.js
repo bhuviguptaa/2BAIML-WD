@@ -23,5 +23,5 @@ displayBalance = function(){
     "Balance: " + account.balance;
 }
 
-
-withdrawAmount(6000);
+depositAmount(2000);
+withdrawAmount(1000);
