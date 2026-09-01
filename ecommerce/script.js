@@ -5,18 +5,18 @@ let product = {
     price: 50000,
     quantity: 2,
     calculateTotal: function() {
-        return this.price * this.quantity;
+        return product.price * product.quantity;
     },
     updateQuantity: function(newQuantity) {
-        this.quantity = newQuantity;
+        product.quantity = newQuantity;
     },
     displayDetails: function() {
         document.getElementById("output").innerHTML =
-            "Product ID: " + this.productId + "<br>" +
-            "Product Name: " + this.productName + "<br>" +
-            "Price: " + this.price + "<br>" +
-            "Quantity: " + this.quantity + "<br>" +
-            "Total Price: " + this.calculateTotal();
+            "Product ID: " + product.productId + "<br>" +
+            "Product Name: " + product.productName + "<br>" +
+            "Price: " + product.price + "<br>" +
+            "Quantity: " + product.quantity + "<br>" +
+            "Total Price: " + product.calculateTotal();
     }
 };
 product.displayDetails();

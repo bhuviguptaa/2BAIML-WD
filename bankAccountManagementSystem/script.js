@@ -22,6 +22,5 @@ displayBalance = function(){
     "Account Number: " + account.accountNumber + "<br>" +
     "Balance: " + account.balance;
 }
-
 depositAmount(2000);
 withdrawAmount(1000);
