@@ -21,6 +21,6 @@ let product = {
     }
 };
 product.displayDetails();
-product.updateQuantity(3);
+product.updateQuantity(2);
 
 
