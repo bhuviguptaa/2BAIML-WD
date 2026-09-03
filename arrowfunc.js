@@ -1,10 +1,10 @@
-function sum(...values){
+function sum(name,...values){
     let total = 0;
     for( let n of values){
         total+=n
     }
-    console.log(total);
+    console.log(name,total);
 }
-sum(10,20);
-sum(10,100,1000);
+sum("bhuvi", 10, 20);
+sum("bhuvi", 10, 100, 1000);
 
