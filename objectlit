@@ -1,7 +1,10 @@
-let F = "firstname"
-let L = "lastname"
+let F = "first"
+let L = "last"
 let data={
     [F]: "bhuvi",
     [L]: "gupta"
+    show(){
+        console.log(this.first, this.last)
+    }
 }
-console.log(data.firstname, data.lastname)
+data.show();
