@@ -1,22 +1,10 @@
-const fs= require('fs')
-fs.writeFile("std.txt", "Name: Bhuvi", (err) => {
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log("File created successfully")
-    }
+const eventEmitter = require('events');
+const cd = new eventEmitter();
+cd.on('greet', (name) => {
+    console.log(`Hello, ${name}!`);
+});
+cd.on('exit', (num) => {
+    console.log(`Exiting, ${num}`);
 })
-
-fs.appendFile(
-    "std.txt",
-    "\nAge: 20",
-    (err,data) => {
-        if(err){
-            console.log(err)
-        }
-        else{
-            console.log("Data appended successfully")
-        }
-    }
-)
+cd.emit('greet', 'bhuvi');
+cd.emit('exit', 10);
