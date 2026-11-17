@@ -1,0 +1,22 @@
+//QUESTION 1
+const B = require('events');
+const obj = new B();
+obj.on('std event', (name, rollNo) => {
+    console.log(`Welcome to the class ${name}`);
+    console.log(`Welcome to class, Roll No: ${rollNo}`);
+});
+obj.emit('std event', 'bhuvi', 54);
+
+
+//QUESTION 2
+console.log("start")
+setTimeout(()=>{
+    console.log("timeout")
+}, 2000)
+setImmediate(()=>{
+    console.log("immediate")
+})
+process.nextTick(()=>{
+    console.log("next tick")
+})
+console.log("exit")
