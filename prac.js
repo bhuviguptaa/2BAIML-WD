@@ -20,3 +20,35 @@ process.nextTick(()=>{
     console.log("next tick")
 })
 console.log("exit")
+
+
+//QUESTION 3
+const fs= require('fs')
+fs.writeFile("std.txt", "Name: Bhuvi", (err) => {
+    if(err){
+        console.log(err)
+    }
+    else{
+        console.log("File created successfully")
+  }
+})
+fs.appendFile(
+    "std.txt",
+    "\nAge: 19",
+    (err,data) => {
+        if(err){
+            console.log(err)
+        }
+        else{
+            console.log("Data appended successfully")
+        }
+    }
+)
+fs.readFile("std.txt", "utf-8", (err,data) => {
+    if(err){
+        console.log(err)
+    }
+    else{
+        console.log(data)
+    }
+})
